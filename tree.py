@@ -1,4 +1,4 @@
-def fir_tree(n):
+def tree(n):
     if not (type(n) is int or type(n) is str):
         raise TypeError(f"{n} is not an int")
     else:
@@ -22,7 +22,7 @@ def fir_tree(n):
 
 def main():
     n = "12"
-    result = fir_tree(n)
+    result = tree(n)
     print(result)
 
 
