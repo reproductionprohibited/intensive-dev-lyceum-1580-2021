@@ -1,6 +1,6 @@
 def tree(n):
     if not (type(n) is int or type(n) is str):
-        raise TypeError(f"{n} is not an int")
+        raise TypeError(f"{n} is not a number")
     else:
         try:
             n = int(n)
