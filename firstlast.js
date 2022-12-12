@@ -12,9 +12,9 @@ function last(list) {
     return undefined;
 }
 
-var t1 = 1;
-var t2 = [1, 2, 3];
-var t3 = "String";
+const t1 = 1;
+const t2 = [1, 2, 3];
+const t3 = "String";
 
 console.log(first(t1));
 console.log(last(t1));
