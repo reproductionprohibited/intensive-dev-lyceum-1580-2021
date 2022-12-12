@@ -11,9 +11,21 @@ class Range {
     private static ArrayList<Integer> rangeRight(Integer end, Integer step, Boolean isRight) {
         return rangeRight(0, end, step, isRight);
     }
-    
+
     private static ArrayList<Integer> rangeRight(Integer end, Boolean isRight) {
         return rangeRight(0, end, 1, isRight);
+    }
+
+    private static ArrayList<Integer> rangeRight(Integer start, Integer end, Integer step) {
+        return rangeRight(start, end, step, false);
+    }
+
+    private static ArrayList<Integer> rangeRight(Integer end, Integer step) {
+        return rangeRight(0, end, step, false);
+    }
+
+    private static ArrayList<Integer> rangeRight(Integer end) {
+        return rangeRight(0, end, 1, false);
     }
 
     private static ArrayList<Integer> range(Integer start, Integer end, Integer step) throws IllegalArgumentException {
