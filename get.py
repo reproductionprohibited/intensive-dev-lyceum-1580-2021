@@ -1,14 +1,14 @@
-def get(srcObject, path):
+def get(src_object, path):
     for item in path.split('.'):
-        if item in srcObject:
-            srcObject = srcObject[item]
+        if item in src_object:
+            src_object = src_object[item]
             continue
         return None
-    return srcObject
+    return src_object
 
 
 def main():
-    srcObject = {
+    src_object = {
         'foo': 'bar',
         'deep': {
             'nested': {
@@ -19,11 +19,11 @@ def main():
     """
     TESTING
     
-    print(get(srcObject, 'deep.nested.field')) -> baz
-    print(get(srcObject, 'foo')) -> bar
-    print(get(srcObject, 'deep')) -> {'nested': {'field': 'baz'}}
-    print(get(srcObject, 'nonexisting')) -> None
-    print(get(srcObject, 'foo.nonexisting')) -> None
+    print(get(src_object, 'deep.nested.field')) -> baz
+    print(get(src_object, 'foo')) -> bar
+    print(get(src_object, 'deep')) -> {'nested': {'field': 'baz'}}
+    print(get(src_object, 'nonexisting')) -> None
+    print(get(src_object, 'foo.nonexisting')) -> None
     """
     
 
