@@ -1,0 +1,20 @@
+1. Таблица Employees. Получить список всех сотрудников с именем 'David’
+
+SELECT * FROM Employees
+  WHERE FIRST_NAME = 'David'
+  
+2. Таблица Employees. Получить список всех сотрудников у которых зарплата находится в промежутке от 8000 до 9000 (включительно)
+
+SELECT * FROM Employees
+  WHERE SALARY BETWEEN 8000 AND 9000
+  
+3. Таблица Employees. Получить список всех сотрудников у которых в имени содержится символ '%’
+SELECT * FROM Employees
+  WHERE FIRST_NAME LIKE '%[%]%'
+  
+4. Таблица Employees. Получить список всех ID менеджеров
+SELECT DISTINCT MANAGER_ID FROM Employees
+
+5. Таблица Employees. Получить репорт по department_id с минимальной и максимальной зарплатой, 
+с ранней и поздней датой прихода на работу и с количествов сотрудников. 
+Сортировать по количеству сотрудников (по убыванию)
