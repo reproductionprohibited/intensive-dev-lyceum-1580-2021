@@ -54,5 +54,12 @@ public class Intersection {
         for(IntPair resultPair: intersection(user1, user2)) {
             System.out.println(resultPair);
         }
+        /*
+        OUTPUT:
+        
+        [17, 18]
+        [20, 22]
+        [8, 11]
+        */
     }
 }
